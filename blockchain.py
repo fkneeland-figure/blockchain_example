@@ -114,7 +114,10 @@ def is_valid():
     }
     return jsonify(response), 200
 
+port = sys.argv[1]
+print("running a server on port: " + port)
+
 # Running the app
-app.run(host="0.0.0.0", port="5000")
+app.run(host="0.0.0.0", port=port)
 
 
